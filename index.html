@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concours Tadam - Elancia</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/jquery-pincode-autotab.css">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/css/jquery-pincode-autotab.css"
+    />
+  </head>
 
-<body>
+  <body>
     <h1>Concours Tadam</h1>
     <h2>Rentrez votre code !</h2>
 
-    <div class="container">
-        <div class="column">
-            <div class="jpa">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-            </div>
+    <div class="container mt-5">
+      <div class="column">
+        <div class="col-12 jpa">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
         </div>
+      </div>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
-    </script>
-    <script type="text/javascript" src="dist/js/jquery-pincode-autotab.min.js"></script>
+    <div class="container mt-5">
+      <div class="column">
+        <div class="col-12">
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Jean Dujardin *"
+            required="required"
+          />
+        </div>
+      </div>
+    </div>
+
+    <input type="submit" value="Commencez le jeu !" />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="dist/js/jquery-pincode-autotab.min.js"
+    ></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $(".jpa input").jqueryPincodeAutotab();
-        });
+      $(document).ready(function () {
+        $(".jpa input").jqueryPincodeAutotab();
+      });
     </script>
-</body>
-
+  </body>
 </html>
