@@ -9,43 +9,54 @@
       type="text/css"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="dist/css/jquery-pincode-autotab.css"
-    />
+    <script src="main.js"></script>
   </head>
 
   <body>
     <h1>Concours Tadam</h1>
     <h2>Rentrez votre code !</h2>
 
-    <div class="container mt-5">
-      <div class="column">
-        <div class="col-12 jpa">
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
-          <input type="text" maxlength="1" />
+    <form id="formulaire" class="container mt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 jpa">
+            <input id="nombre1" type="text" maxlength="1" />
+            <input id="nombre2" type="text" maxlength="1" />
+            <input id="nombre3" type="text" maxlength="1" />
+            <input id="nombre4" type="text" maxlength="1" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container mt-5">
-      <div class="column">
-        <div class="col-12">
-          <input
-            type="text"
-            id="name"
-            class="form-control"
-            placeholder="Jean Dujardin *"
-            required="required"
-          />
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="text"
+              id="Nom"
+              name="Nom"
+              class="form-control"
+              placeholder="Dujardin *"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              id="Prénom"
+              name="Prénom"
+              class="form-control"
+              placeholder="Jean *"
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <input type="submit" value="Commencez le jeu !" />
+      <input
+        type="submit"
+        value="Commencez le jeu !"
+        onClick="popupFalseCode()"
+      />
+    </form>
 
     <script
       type="text/javascript"
