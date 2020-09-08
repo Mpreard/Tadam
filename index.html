@@ -1,82 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concours Tadam - Elancia</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <script src="main.js"></script>
-  </head>
 
-  <body>
-    <h1>Concours Tadam</h1>
-    <h2>Rentrez votre code !</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concours Tadam - Elancia</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="main.js"></script>
 
-    <form id="formulaire" class="container mt-5">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 jpa">
-            <input id="nombre1" type="text" maxlength="1" />
-            <input id="nombre2" type="text" maxlength="1" />
-            <input id="nombre3" type="text" maxlength="1" />
-            <input id="nombre4" type="text" maxlength="1" />
-          </div>
+</head>
+
+<body>
+  <h1>Concours Tadam</h1>
+  <h2>Rentrez votre code !</h2>
+
+  <form action="index.php" id="formulaire" class="container mt-5" method="POST">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 jpa">
+          <input id="nombre1" name="nombre1" type="text" maxlength="1" required />
+          <input id="nombre2" name="nombre2" type="text" maxlength="1" required />
+          <input id="nombre3" name="nombre3" type="text" maxlength="1" required />
+          <input id="nombre4" name="nombre4" type="text" maxlength="1" required />
         </div>
       </div>
+    </div>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-6">
-            <input
-              type="text"
-              id="Nom"
-              name="Nom"
-              class="form-control"
-              placeholder="Dujardin *"
-              required
-            />
-          </div>
-          <div class="col-6">
-            <input
-              type="text"
-              id="Prénom"
-              name="Prénom"
-              class="form-control"
-              placeholder="Jean *"
-              required
-            />
-          </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6">
+          <input type="text" id="nom" name="nom" class="form-control" placeholder="Dujardin *" required
+            pattern="[A-Za-z]" />
+        </div>
+        <div class="col-6">
+          <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jean *" required
+            pattern="[A-Za-z]" />
         </div>
       </div>
+    </div>
 
-      <input
-        type="submit"
-        value="Commencez le jeu !"
-        onClick="popupFalseCode()"
-      />
-    </form>
+    <input type="submit" value="Commencez le jeu !" />
+  </form>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="dist/js/jquery-pincode-autotab.min.js"
-    ></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="dist/js/jquery-pincode-autotab.min.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".jpa input").jqueryPincodeAutotab();
-      });
-    </script>
-  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".jpa input").jqueryPincodeAutotab();
+    });
+  </script>
+</body>
+
 </html>
