@@ -41,10 +41,10 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-6">
-          <input type="text" id="nom" name="nom" class="form-control" placeholder="Dujardin"  pattern="[A-Za-z]+" required />
+          <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom"  pattern="[A-Za-z]+" required />
         </div>
         <div class="col-6">
-          <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jean" pattern="[A-Za-z]+" required />
+          <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prenom" pattern="[A-Za-z]+" required />
         </div>
       </div>
     </div>

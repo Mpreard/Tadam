@@ -26,14 +26,10 @@ $nom = fctRetirerAccents($nom);
 $prenom = fctRetirerAccents($prenom);
 
 if($nombreFinal === $code){
-    header('Location: ./index.php?error='.$nom);
+    header('Location: ./page2.php?nom='.$nom.'&prenom='.$prenom);
 }else{
     header('Location: ./index.php?error=1');
     //header ("Refresh: 3;URL=index.html");
 }
 
-
-//Insertion ou Vérification de l'utilisateur dans la bdd
-$requeteInsertion = "INSERT INTO user (id, first_name, last_name) VALUES ('', LOWER('".$prenom."'), LOWER('".$nom."'));";
-$requeteCherche = "SELECT * FROM user WHERE first_name =LOWER('".$prenom."') AND last_name = LOWER('".$name."');";
 ?>
