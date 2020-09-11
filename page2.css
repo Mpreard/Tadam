@@ -1,5 +1,7 @@
 #grille {
-    width: 100%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image_grille {
@@ -9,8 +11,20 @@
     border-color: white;
 }
 
-@media screen and (min-width: 1215px) {
+@media screen and (max-width: 1678px) {
     .image_grille {
         width: 4.7%;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .image_grille {
+        width: 4.5%;
+    }
+}
+
+@media screen and (max-width: 1679px) {
+    .image_grille {
+        width: 5.2%;
     }
 }
