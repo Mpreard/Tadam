@@ -1,0 +1,16 @@
+#grille {
+    width: 100%;
+}
+
+.image_grille {
+    width: 4.5%;
+    height: auto;
+    border-style: solid;
+    border-color: white;
+}
+
+@media screen and (min-width: 1215px) {
+    .image_grille {
+        width: 4.7%;
+    }
+}
