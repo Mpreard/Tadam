@@ -4,6 +4,17 @@ html, body {
 }
 
 .logos_welcome {
-    background-color: blue;
+    background-color: #00b3bb;
 }
 
+.tadam {
+    float: left;
+}
+
+.elancia {
+    float: right;
+}
+
+.message {
+    float: center;
+}

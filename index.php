@@ -16,7 +16,13 @@
   
   <div class = "main_container">
     <div class = "logos_welcome">
-      <img class="logo elancia" src="assets/logos/logo_elancia.svg>">
+      <img class="logo tadam" src="assets/logos/logo_tadam.png">
+      <div class ="welcome message">
+        <p> Bienvenue Challenger !</p>
+        <p>Veuillez entrer le code trouvé grâce à l'énigme</p>
+        <p> Bonne chance ! </p>
+      </div>
+      <img class="logo elancia" src="assets/logos/logo_elancia.png">
     </div>
     <div class="form_container">
       <form action="run.php" id="formulaire" class="container mt-5" method="POST">
