@@ -24,22 +24,20 @@
         {
           if($donnees['display'] == 0)
           {
-            echo '<a class="image_grille" href="page2.php?img='.$id.'"><img id='.$id.'  src="assets/img-grille/noir.png"/></a>';
-            $id++;
+            echo '<a id='.$id.'  class="image_grille" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png"/></a>';
           }
           else{
-            echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
-            $id++;
-          }    
+              echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
+          } 
+          $id++;   
         }
-        $reponse->closeCursor();
-        
+
         if(isset($_GET["img"]))
           {
             $id_img = $_GET["img"];
-            $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');  
-            header("Refresh:0; url=page2.php");
-          }        
+            $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
+            header("refresh:0, url=page2.php");
+          }
         ?>
     </div>
   </body>
