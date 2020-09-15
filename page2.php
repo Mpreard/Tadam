@@ -17,20 +17,30 @@
   </head>
   <body>
     <div id="grille">
-      <?php
+    <?php
+        $id = 1;
         $reponse = $bdd->query('SELECT url, display FROM image ORDER BY url ASC');
         while ($donnees = $reponse->fetch())
         {
-          if($donnees['display'] == 0){
-            echo '<img class="image_grille" src="assets/img-grille/noir.png"/>';
-          } else
+          if($donnees['display'] == 0)
           {
-            echo '<img class="image_grille" src="assets/img-grille/' . $donnees['url'] . '.jpg"/>';
+            echo '<a class="image_grille" href="page2.php?img='.$id.'"><img id='.$id.'  src="assets/img-grille/noir.png"/></a>';
+            $id++;
           }
+          else{
+            echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
+            $id++;
+          }    
         }
-
-        $reponse->closeCursor(); 
-      ?>
+        $reponse->closeCursor();
+        
+        if(isset($_GET["img"]))
+          {
+            $id_img = $_GET["img"];
+            $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');  
+            header("Refresh:0; url=page2.php");
+          }        
+        ?>
     </div>
   </body>
 </html>
