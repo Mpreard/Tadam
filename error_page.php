@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concours Tadam - Elancia</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="main.js"></script>
+  <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>
+
+</head>
+
+<body>
+  
+  <div class = "main_container">
+    <div class = "logos_welcome">
+      <img class="logo elancia" src="assets/logos/logo_elancia.png">
+      <div class ="welcome message">
+        <img class ="logo cadenas_error" src="assets/logos/logo_cadenas.png">
+      </div>
+      <img class="logo tadam" src="assets/logos/logo_tadam.png">
+    </div>
+    <div class ="error_page">
+        
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="dist/js/jquery-pincode-autotab.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".jpa input").jqueryPincodeAutotab();
+    });
+  </script>
+</body>
+<footer>
+    <div class="bottom"></div>
+</footer>
+
+</html>

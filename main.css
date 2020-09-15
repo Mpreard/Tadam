@@ -1,20 +1,154 @@
+@font-face {
+    font-family: "Lemon Milk Bold";
+    src: url("assets/typo/LEMONMILK-Bold.otf");
+  }
+  
+@font-face {
+    font-family: "Futura-T-OT";
+    src: url("assets/typo/Futura-T-OT-Book_19064.ttf");
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .logos_welcome {
-    background-color: #00b3bb;
+    background: rgb(1,112,117);
+    background: linear-gradient(90deg, rgba(1,112,117,1) 0%, rgba(0,179,187,1) 20%, rgba(0,179,187,1) 80%, rgba(1,112,117,1) 100%);
+    overflow:auto;
+    text-align: center;
+}
+
+.cadenas{
+    width: 35%;
+    height: auto;
 }
 
 .tadam {
-    float: left;
+    max-width: 100%;
+    float:left;
+    width: 15%;
+    height: auto;
+    padding-left : 3%;
+    
 }
 
 .elancia {
-    float: right;
+    float:right;
+    width: 15%;
+    height: auto;
+    padding-right : 3%;
 }
 
 .message {
-    float: center;
+    position: absolute;
+    left: 32.5%;
+    width: 35%;
+    font-size: 1.8vw;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(235,235,235,1) 25%, rgba(235,235,235,1) 75%, rgba(158,158,158,1) 100%);
+}
+
+.enter_code{
+    font-size: 1.35vw;
+    font-weight: 600;
+}
+
+.code_container {
+    display: inline-block;
+}
+
+input {
+    border: 4px solid #00b3bb;
+    border-radius: 15px;
+    text-align: center;
+    border-style: outset;
+}
+
+.number_code{
+    font-size: 5em;
+    width: 1.5em;
+    height: 1.5em;
+    font-family: "Futura-T-OT";
+    color: #d4181f;
+    margin-right: 0.5em;
+}
+
+.number_left{
+    margin-right: 0;
+}
+
+
+p {
+    font-family: "Futura-T-OT";
+}
+
+.welcome_challenger{
+    font-family: "Lemon Milk Bold";;
+}
+
+.GL {
+    color: #00b3bb;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.form_container {
+    background-color: black;
+    padding-top: 7rem!important;
+}
+
+.code_square {
+    text-align: center;
+}
+
+.infos_container {
+    width: 35%;
+    font-size: 1.8vw;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(235,235,235,1) 25%, rgba(235,235,235,1) 75%, rgba(158,158,158,1) 100%);
+}
+
+.form_infos{
+    border: 4px solid #00b3bb!important;
+    border-radius: 15px!important;
+    text-align: center!important;
+    border-style: outset!important;
+}
+
+.container_infos{
+
+}
+
+.input_infos{
+    max-width: 100%!important;
+    padding: 3% 20% 0 20%!important;
+}
+
+.submit_button{
+    padding-top: 3%;
+}
+
+footer{
+    background-color: #00b3bb;
+}
+
+
+/*CSS error_page*/
+
+.cadenas_error{
+    width: 35%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    height: auto;
+
 }
