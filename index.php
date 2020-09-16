@@ -26,8 +26,8 @@
       <img class="logo tadam" src="assets/logos/logo_tadam.png">
     </div>
     <div class="form_container">
-      <form action="run.php" id="formulaire" class="container mt-5" method="POST">
-        <div class="container mt-5 code_square">
+      <form action="run.php" id="formulaire" class="form_group_button" method="POST">
+        <div class="container code_square form_group_button">
           <div class="row">
             <div class="col-12 jpa">
               <div class = code_container>
@@ -51,23 +51,26 @@
                 }
             }
         ?>
-
-        <div class="container mt-5 container_infos">
+      </form>
+    </div>
+    <div class="bottom_page">
+    <div class="container mt-5 container_infos">
           <div class="row">
-            <div class = infos_container>
+            <div class = "infos_container">
               <div class="col-6 input_infos">
                 <input type="text" id="nom" name="nom" class="form-control form_infos" placeholder="Nom"  pattern="[A-Za-z]+" required />
               </div>
               <div class="col-6 input_infos">
                 <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" pattern="[A-Za-z]+" required />
               </div>
-              <div class = submit_button>
-                <input type="submit" value="Commencez le jeu !" />
+              <div class="col-6 input_infos input_submit_button">
+                <div class = "submit_button_class">
+                  <input type="submit_button" class = "submit_button" value="Commencez le jeu !" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
     </div>
   </div>
 
