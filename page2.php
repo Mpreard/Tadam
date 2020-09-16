@@ -38,6 +38,14 @@
             $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
             header("refresh:0, url=page2.php");
           }
+        $reponse->closeCursor();
+
+
+
+        //ici code pour insertion en bdd du nom prenom ip via cookie
+        //$bdd->exec('INSERT INTO user(first_name, last_name, ip_user) VALUES("'.$_COOKIE['ip'].'","'.$_COOKIE['prenom'].'", "'.$_COOKIE['nom'].'", )');
+        
+
         ?>
     </div>
   </body>
