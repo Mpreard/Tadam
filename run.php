@@ -24,7 +24,4 @@ if($nombreFinal === $code){
     header('Location: ./index.php?error=1');
     //header ("Refresh: 3;URL=index.html");
 }
-
-
-// On ajoute une entrée dans la table jeux_video
 ?>
