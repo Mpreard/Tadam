@@ -51,7 +51,6 @@
                 }
             }
         ?>
-      </form>
     </div>
     <div class="bottom_page">
     <div class="container mt-5 container_infos">
@@ -65,12 +64,13 @@
               </div>
               <div class="col-6 input_infos input_submit_button">
                 <div class = "submit_button_class">
-                  <input type="submit_button" class = "submit_button" value="Commencez le jeu !" />
+                  <input type="submit" class = "submit_button" value="Commencez le jeu !" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </form>
     </div>
   </div>
 
