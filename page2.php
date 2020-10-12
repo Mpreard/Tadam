@@ -44,36 +44,10 @@
         ?>
       </div>
       <div>
-      <form onclick="Submit_answer()" method="POST">
+      <form action="grille_back.php" method="POST">
         <input type="text" placeholder="Votre réponse" name="answer" id="answer" required/>
         <input type="submit" value="Valider la réponse"/>
       </form>
-    </div>
-    <?php
-      function Submit_answer()
-      {
-        $answer = htmlspecialchars($_GET['answer']);
-
-        if(isset($_GET["img"]))
-        {
-          $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
-        } else 
-        {
-          echo "<script>alert(\"Veuillez choisir une image\")</script>";
-        }
-
-        if(isset($_COOKIE['ip']) && isset($_COOKIE['nom']) && isset($_COOKIE['prenom']))
-        {
-          $bdd->exec('INSERT INTO user(first_name, last_name, ip_user) VALUES("'.$_COOKIE['ip'].'","'.$_COOKIE['prenom'].'", "'.$_COOKIE['nom'].'", )');
-        }
-
-        $bdd->exec('INSERT INTO answer(user_answer) VALUES ("'.$answer.'")');
-
-        header("refresh:0, url=page2.php");
-
-      }
-    ?>
-
-    
+    </div>    
   </body>
 </html>
