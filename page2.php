@@ -74,7 +74,7 @@
           <div class="row">
             <div class = "infos_container">
               <div class="col-6 input_infos">
-                <p>Selon vous, qui se cache derrière cette photo ?</p> 
+                <p class="question">Selon vous, qui se cache derrière cette photo ?</p> 
               </div>
               <div class="col-6 input_infos">
                 <input type="text" id="reponse" name="reponse" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
