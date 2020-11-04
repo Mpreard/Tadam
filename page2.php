@@ -42,9 +42,15 @@ session_start();
           <?php
             $id = 1;
             $clique = false;
+            $lignenb = 0;
             $reponse = $bdd->query('SELECT url, display FROM image ORDER BY url ASC');
             while ($donnees = $reponse->fetch())
             {
+              $compteur = $id/19;
+              if(fmod($id-1, 19) == 0){
+                $lignenb = $lignenb + 1 ;
+                echo '<div class="ligne'.$lignenb.'">';
+              }
               if($donnees['display'] == 0)
               {
                 if(isset($_GET["img"]) && $id == $_GET["img"] && $clique == false)
@@ -59,7 +65,10 @@ session_start();
               elseif ($donnees['display'] == 1){
                   echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
               } 
-              $id++;   
+              if(fmod($id, 19) == 0){
+                echo '</div>';
+              }
+              $id++;  
             }
             $reponse->closeCursor();    
           
