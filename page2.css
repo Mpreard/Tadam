@@ -24,6 +24,7 @@
     background-color: black;
     text-align: center;
     color: white;
+    font-size: 21px;
 }
 
 #first{
@@ -34,6 +35,28 @@
     color: rgb(0 179 187);
     margin-block-end: 0em;
 }
+
+.form_infos {
+    margin: 0% 0% 0% 0%!important;
+}
+
+.bottom-page{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.input_infos {
+    max-width: 100%!important;
+    padding: 0% 20% 0 20%!important;
+}
+
+.question{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
 @media screen and (max-width: 1678px) {
     .image_grille {
         width: 4.7%;
