@@ -1,8 +1,11 @@
 <?php
 
-setcookie('nom',htmlspecialchars($_POST['nom']), time() + 365*24*3600, null, null, false, true);
-setcookie('prenom',htmlspecialchars($_POST['prenom']), time() + 365*24*3600, null, null, false, true);
-setcookie('ip',$_SERVER['REMOTE_ADDR'], time() + 365*24*3600, null, null, false, true);
+session_start();
+
+$_SESSION['nom'] = $_POST['nom'];
+$_SESSION['prenom'] = $_POST['prenom'];
+$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
+
 
 $code = '1234';
 

@@ -1,6 +1,6 @@
-<?php
-      function Submit_answer()
-      {
+<?php 
+  session_start();
+
         $answer = htmlspecialchars($_GET['answer']);
 
         if(isset($_GET["img"]))
@@ -11,9 +11,9 @@
           exit("Veuillez choisir une image");
         }
 
-        if(isset($_COOKIE['ip']) && isset($_COOKIE['nom']) && isset($_COOKIE['prenom']))
+        if(isset($_SESSION['ip']) && isset($_SESSION['nom']) && isset($_SESSION['prenom']))
         {
-          $bdd->exec('INSERT INTO user(first_name, last_name, ip_user) VALUES("'.$_COOKIE['ip'].'","'.$_COOKIE['prenom'].'", "'.$_COOKIE['nom'].'", )');
+          $bdd->exec('INSERT INTO user(first_name, last_name, ip_user) VALUES("'.$_SESSION['ip'].'","'.$_SESSION['prenom'].'", "'.$_SESSION['nom'].'", )');
         } else 
         {
           exit("Veuillez recharger la page");
@@ -22,6 +22,4 @@
         $bdd->exec('INSERT INTO answer(user_answer) VALUES ("'.$answer.'")');
 
         header("refresh:0, url=page2.php");
-
-      }
     ?>

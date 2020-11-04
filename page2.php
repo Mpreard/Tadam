@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
   try{
     $bdd = new PDO('mysql:host=mysql-tima1617.alwaysdata.net;dbname=tima1617_bdd_tadam_elancia_concours;charset=utf8','tima1617','Maeltima16');
   }
