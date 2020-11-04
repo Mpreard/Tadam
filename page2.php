@@ -9,6 +9,11 @@ session_start();
   {
           die('Erreur : ' . $e->getMessage());
   }
+
+  if(!isset($_SESSION['ip']) && !isset($_SESSION['nom']) && !isset($_SESSION['prenom']))
+  {
+    header("refresh:0, url=index.php");   
+  }
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +52,8 @@ session_start();
             while ($donnees = $reponse->fetch())
             {
               $compteur = $id/19;
-              if(fmod($id-1, 19) == 0){
+              if(fmod($id-1, 19) == 0)
+              {
                 $lignenb = $lignenb + 1 ;
                 echo '<div class="ligne'.$lignenb.'">';
               }
@@ -85,6 +91,7 @@ session_start();
                 </div>
                 <div class="col-6 input_infos">
                   <input type="text" id="answer" name="answer" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+                  <input type="text" id="id_img" name="id_img" value="<?php echo($_GET['img']) ?>" style="display:none;">
                 </div>
                 <div class="col-6 input_infos input_submit_button">
                   <div class = "submit_button_class">
