@@ -172,8 +172,12 @@ p {
 
 }
 
+/*CSS page 2 */
 
-
+.presentation_text {
+    padding-top: 25px;
+    background-color: black;
+}
 
 
 /*MediaQueries*/
@@ -513,5 +517,37 @@ p {
     }
 }
 
+@media screen and (max-width: 376px) and (max-height: 813px){
+.form_container {
+    padding-top: 16.5rem!important;
+}
 
+@media screen and (max-width: 361px){
+    .number_code {
+        font-size: 3em;
+    }
 
+    .form_container {
+        padding-top: 13.5rem!important;
+    }
+
+    .infos_container {
+        height: 173%!important;
+        top: -120%!important;
+    }
+}
+
+@media screen and (max-width: 361px){
+    .number_code {
+        font-size: 2.7em;
+    }
+
+    .form_container {
+        padding-top: 9rem!important;
+    }
+
+    .infos_container {
+        height: 204%!important;
+        top: -126%!important;
+    }
+}}

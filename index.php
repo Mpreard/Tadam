@@ -53,7 +53,7 @@
         ?>
     </div>
     <div class="bottom_page">
-    <div class="container mt-5 container_infos">
+      <div class="container mt-5 container_infos">
           <div class="row">
             <div class = "infos_container">
               <div class="col-6 input_infos">
