@@ -66,30 +66,25 @@ session_start();
           ?>
         </div>
       </div>
-      <div>
-        <form action="grille_back.php" method="POST">
-          <input type="text" placeholder="Votre réponse" name="answer" id="answer" required/>
-          <input type="submit" value="Valider la réponse"/>
-        </form>
-      </div>
-      <div class="bottom_page">
-        <div class="container mt-5 container_infos">
-          <div class="row">
-            <div class = "infos_container">
-              <div class="col-6 input_infos">
-                <p>Selon vous, qui se cache derrière cette photo ?</p> 
-              </div>
-              <div class="col-6 input_infos">
-                <input type="text" id="reponse" name="reponse" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
-              </div>
-              <div class="col-6 input_infos input_submit_button">
-                <div class = "submit_button_class">
-                  <input type="submit" class = "submit_button" value="Valider la réponse" />
+      <form action="grille_back.php" method="POST">
+        <div class="bottom_page">
+          <div class="container mt-5 container_infos">
+            <div class="row">
+              <div class = "infos_container">
+                <div class="col-6 input_infos">
+                  <p>Selon vous, qui se cache derrière cette photo ?</p> 
+                </div>
+                <div class="col-6 input_infos">
+                  <input type="text" id="reponse" name="reponse" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+                </div>
+                <div class="col-6 input_infos input_submit_button">
+                  <div class = "submit_button_class">
+                    <input type="submit" class = "submit_button" value="Valider la réponse" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </form>
     </div>  
     </div>  
