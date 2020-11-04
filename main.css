@@ -98,7 +98,7 @@ p {
 
 .form_container {
     background-color: black;
-    padding-top: 13rem!important;
+    padding-top: 10rem!important;
     height: 73vh;
 }
 
@@ -180,12 +180,12 @@ p {
 @media screen and (max-width: 1100px) {
     .infos_container {
         width: 42%;
-        left: 26%;
+        left: 29%;
     }
 
     .message{
         width: 42%;
-        left: 26%;
+        left: 29%;
     }
 }
 
@@ -209,7 +209,309 @@ p {
 
 @media screen and (max-width: 767px) {
     .form_group_button {
-        max-width: 100%;
+        max-width: 100%!important;
     }
 }
+
+@media screen and (max-width: 643px) {
+    .message {
+        width: 51%;
+        left: 24.5%;
+    }
+
+    .cadenas {
+        width: 42%;
+    }
+
+    .message {
+        font-size: 2.8vw;
+    }
+
+    .enter_code {
+        font-size: 2.5vw;
+    }
+
+    .GL {
+        font-size: 2.5vw;
+    }
+
+    .number_code {
+        font-size: 4em;
+    }
+
+    .infos_container {
+        width: 51%;
+        left: 24.5%;
+    }
+
+    .input_infos {
+        padding: 3% 15% 0 15%!important;
+    }
+
+    .logos_welcome {
+        height: 13vh;
+    }
+
+    .form_container {
+        height: 79vh;
+    }
+}
+
+@media screen and (max-width: 523px) {
+    .number_code {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .number_code {
+        font-size: 3.2em;
+    }
+    .logos_welcome {
+        height: 11vh;
+    }
+
+    .form_container {
+        height: 81vh;
+    }
+}
+
+@media screen and (max-width: 481px) and (max-height: 900px) and (min-height: 760px) {
+    .infos_container {
+        height: 184%!important;
+        top: -120%!important;
+    }
+    .message {
+        height: 18%!important;
+    }
+    .form_group_button {
+        max-width: 100%!important;
+        padding-top: 0px!important;
+    }
+    .infos_container {
+        width: 100%!important;
+        left: 0%!important;
+    }
+
+}
+@media screen and (max-width: 481px) {
+    .message {
+        width: 100%;
+        background: white;
+        left: 0%;
+        top: 11%;
+        height: 20%!important;
+        position: fixed;
+        border-radius: 0;
+        background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(235,235,235,1) 25%, rgba(235,235,235,1) 75%, rgba(158,158,158,1) 100%);
+    }
+
+    .elancia {
+        float: none;
+        height: 100%;
+        padding-right: 3%;
+        padding-left: 14%;
+    }
+
+    .tadam {
+        float: none;
+        height: 100%;
+        padding-left: 3%;
+        padding-right: 14%;
+    }
+
+    .cadenas {
+        width: 23%;
+    }
+
+    .enter_code {
+        font-size: 4.5vw;
+        margin-bottom: 0.75px;
+    }
+    .GL {
+        font-size: 4.5vw;
+    }
+    .welcome_challenger {
+        font-family: "Lemon Milk Bold";
+        font-weight: bolder;
+        font-size: 3.7vw;
+        margin-bottom: 8.5px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .infos_container {
+        width: 100%;
+        left: 0%;
+        border-radius: 0;
+        height: 206%;
+        top: -150%;
+    }
+
+    .form_infos {
+        font-size: 1.3rem!important;
+    }
+
+    .submit_button {
+        font-size: 1rem!important;
+        width: 90%!important;
+        font-family: "Lemon Milk Bold"!important;
+        font-weight: bolder!important;
+    }
+
+    .form_container {
+        height: 78vh;
+    }
+
+    .bottom_page {
+        height: 11vh;
+    }
+
+    .form_container {
+        padding-top: 19rem!important;
+    }
+
+    .number_code {
+        font-size: 3.8em;
+    }
+
+    .number_code {
+        margin-right: 0.2em;
+    }
+
+    .number_left{
+        margin-right: 0em; 
+    }
+    .form_group_button {
+        max-width: 100%!important;
+        padding-top: 29px;
+    }
+    .form-control {
+        display: inline-block!important;
+        font-family: "Lemon Milk Bold"!important;
+        font-weight: bolder!important;
+        padding: .25rem .75rem!important;
+        font-size: 1rem!important;
+        width: 75%!important;
+        line-height: 0!important;
+    }
+    .form_infos {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .message {
+        height: 17%!important;
+    }
+    .infos_container {
+        height: 169%!important;
+        top: -120%!important;
+    }
+}
+@media screen and (max-width: 445px){
+    .number_code {
+        margin-right: 0.05em;
+    }
+}
+@media screen and (max-width: 420px){
+    .message {
+        height: 17%;
+    }
+
+    .enter_code {
+        font-size: 3.9vw;
+    }
+
+    .GL {
+        font-size: 3.9vw;
+    }
+
+    .number_code {
+        font-size: 3.3em;
+    }
+
+    .infos_container {
+        width: 100%;
+        left: 0%;
+        border-radius: 0;
+        height: 206%;
+        top: -150%;
+    }
+
+    .form_container {
+        padding-top: 21rem!important;
+    }
+
+    .message {
+        height: 21%;
+    }
+
+    .form_infos {
+        font-size: 1.2rem!important;
+    }
+
+    .submit_button {
+        font-size: 1.1rem!important;
+    }
+
+    .submit_button {
+        width: 95%!important;
+        padding: .2rem .75rem;
+    }
+
+    .form-control {
+        padding: .25rem .75rem!important;
+        font-size: 1rem!important;
+        line-height: 0!important;
+    }
+}
+@media screen and (max-width: 420px) and (max-height: 800px){
+    .form_container {
+        padding-top: 13rem!important;
+    }
+}
+
+@media screen and (max-width: 420px) and (max-height: 750px){
+    .bottom_page {
+        height: 13vh;
+    }
+    .infos_container {
+        height: 173%!important;
+        top: -120%!important;
+    }
+    .form_container {
+        height: 76vh;
+    }
+    .message {
+        height: 19%!important;
+    }
+    .form_group_button {
+        max-width: 100%!important;
+        padding-top: 21px;
+    }
+}
+
+@media screen and (max-width: 413px){
+    .form_container {
+        padding-top: 19rem!important;
+    }
+}
+
+@media screen and (max-width: 394px){
+    .infos_container {
+        height: 185%!important;
+        top: -120%!important;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .form_container {
+        padding-top: 11.5rem!important;
+    }
+}
+
+
 

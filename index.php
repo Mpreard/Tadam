@@ -16,6 +16,7 @@
   
   <div class = "main_container">
     <div class = "logos_welcome">
+      <img class="logo tadam" src="assets/logos/logo_tadam.png">
       <img class="logo elancia" src="assets/logos/logo_elancia.png">
       <div class ="welcome message">
         <img class ="logo cadenas" src="assets/logos/logo_cadenas.png">
@@ -23,7 +24,6 @@
         <p class ="enter_code">Veuillez entrer le code trouvé grâce à l'énigme.</p>
         <p class = "GL"> Bonne chance ! </p>
       </div>
-      <img class="logo tadam" src="assets/logos/logo_tadam.png">
     </div>
     <div class="form_container">
       <form action="run.php" id="formulaire" class="form_group_button" method="POST">
