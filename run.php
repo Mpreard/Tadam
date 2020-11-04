@@ -13,10 +13,12 @@ $nombre4 = $_POST['nombre4'];
 
 $nombreFinal = $nombre1 . $nombre2 . $nombre3 . $nombre4;
 
-if($nombreFinal === $code){
+if($nombreFinal === $code)
+{
     header('Location: ./page2.php');
-}else{
-    header('Location: ./index.php?error=1');
-    //header ("Refresh: 3;URL=index.html");
+} 
+else
+{
+    header('Location: ./error_page.php');
 }
 ?>
