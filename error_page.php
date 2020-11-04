@@ -17,7 +17,6 @@
 </head>
 
 <body>
-  
   <div class = "main_container">
     <div class = "logos_welcome">
       <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
