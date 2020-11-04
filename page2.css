@@ -4,6 +4,12 @@
 
 #grille {
     text-align: center;
+    padding-bottom: 13%;
+}
+
+.message_guess{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
 }
 
 .image_grille {
@@ -11,6 +17,13 @@
     height: auto;
     border-style: solid;
     border-color: white;
+    border-width: 1px;
+    margin: 1px;
+}
+
+.input_answer {
+    max-width: 100%!important;
+    padding: 3% 15% 0 15%!important;
 }
 
 .wrap_grille{
@@ -33,6 +46,7 @@
 .end_presentation{
     color: rgb(0 179 187);
     margin-block-end: 0em;
+    margin-block-start: 0em;
 }
 
 .form_infos {
@@ -54,6 +68,14 @@
 .question{
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+
+.form_answer{
+    line-height: 2;
+}
+
+.submit_button_guess{
+    line-height: 1.25;
 }
 
 /*
