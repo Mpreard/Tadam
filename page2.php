@@ -40,7 +40,8 @@ session_start();
         <p>Chaque jour, vous pourrez dévoiler une des cases et proposer une réponse.</p>
         <p>Plus vous cumulez de réponses (correcte) plus vous aurez de chance d'être </br> tiré au sort pour gagner  partie de jeu chez TADAM ESCAPE</p>
         <p>Bon courage !</p>
-        <p class="end_presentation">Alors ? Saurez-vous retrouver qui se cache derrière cette photo ?</p>
+        <p class="end_presentation">Alors ?</p>
+        <p class="end_presentation">Saurez-vous retrouver qui se cache derrière cette photo ?</p> 
       </div>
       <div class="wrap_grille">
         <div id="grille">
@@ -64,7 +65,7 @@ session_start();
                   echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
                   $clique = true;
                 } else {
-                  echo'<a id='.$id.'  class="image_grille" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png"/></a>';
+                  echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png" class="image_grille"/></a>';
                 }
               
               }
@@ -86,16 +87,20 @@ session_start();
           <div class="container mt-5 container_infos">
             <div class="row">
               <div class = "infos_container">
-                <div class="col-6 input_infos">
-                  <p>Selon vous, qui se cache derrière cette photo ?</p> 
+                <div class="col-6 input_infos input_answer">
+                  <p class="message_guess">Selon vous, qui se cache derrière cette photo ?</p> 
                 </div>
                 <div class="col-6 input_infos">
+<<<<<<< HEAD
                   <input type="text" id="answer" name="answer" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
                   <input type="text" id="id_img" name="id_img" value="<?php echo($_GET['img']) ?>" style="display:none;">
+=======
+                  <input type="text" id="answer" name="answer" class="form-control form_infos form_answer" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+>>>>>>> 41a2e702860a14954d9b53de2d97922d19e14f29
                 </div>
                 <div class="col-6 input_infos input_submit_button">
                   <div class = "submit_button_class">
-                    <input type="submit" class = "submit_button" value="Valider la réponse" />
+                    <input type="submit" class = "submit_button submit_button_guess" value="Valider la réponse" />
                   </div>
                 </div>
               </div>
