@@ -172,6 +172,28 @@ p {
 
 }
 
+.error_page {
+    text-align: center;
+    background-color: black;
+    height: 73vh;
+}
+
+.error_message_div{
+    margin-top: 7%;
+    color: white;
+    display: inline-block;
+    background-color: #00b3bb;
+}
+
+.error_message{
+    margin-bottom: 0;
+}
+
+.img_crane{
+    vertical-align: middle;
+    border-style: none;
+    width: 15%;
+}
 
 /*MediaQueries*/
 @media screen and (max-width: 1100px) {

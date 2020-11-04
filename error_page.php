@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,11 +27,17 @@
       <img class="logo tadam" src="assets/logos/logo_tadam.png">
     </div>
     <div class ="error_page">
-        <h1>ERREUR DANS VOTRE CODE</h1>
+    <div class="error_message_div">
+        <h1 class="error_message">ERREUR DANS VOTRE CODE</h1>
     </div>
+  <div class="error_image">
+    <img src="assets/logos/logo_crane.png" class="img_crane">
+  </div> 
+  </div>
+  <div class="bottom_page">
   </div>
   <?php 
-    header("refresh:3;url=index.php");
+    //header("refresh:3;url=index.php");
   ?>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
