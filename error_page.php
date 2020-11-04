@@ -20,11 +20,11 @@
   
   <div class = "main_container">
     <div class = "logos_welcome">
-      <img class="logo elancia" src="assets/logos/logo_elancia.png">
+      <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
       <div class ="welcome message">
         <img class ="logo cadenas_error" src="assets/logos/logo_cadenas.png">
       </div>
-      <img class="logo tadam" src="assets/logos/logo_tadam.png">
+      <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="assets/logos/logo_tadam.png"></a>  
     </div>
     <div class ="error_page">
         <h1>ERREUR DANS VOTRE CODE</h1>

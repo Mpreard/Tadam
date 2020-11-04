@@ -75,7 +75,7 @@ session_start();
                   <p>Selon vous, qui se cache derrière cette photo ?</p> 
                 </div>
                 <div class="col-6 input_infos">
-                  <input type="text" id="reponse" name="reponse" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+                  <input type="text" id="answer" name="answer" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
                 </div>
                 <div class="col-6 input_infos input_submit_button">
                   <div class = "submit_button_class">
