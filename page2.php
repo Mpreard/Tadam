@@ -91,12 +91,8 @@ session_start();
                   <p class="message_guess">Selon vous, qui se cache derrière cette photo ?</p> 
                 </div>
                 <div class="col-6 input_infos">
-<<<<<<< HEAD
-                  <input type="text" id="answer" name="answer" class="form-control form_infos" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
-                  <input type="text" id="id_img" name="id_img" value="<?php echo($_GET['img']) ?>" style="display:none;">
-=======
-                  <input type="text" id="answer" name="answer" class="form-control form_infos form_answer" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
->>>>>>> 41a2e702860a14954d9b53de2d97922d19e14f29
+                <input type="text" id="answer" name="answer" class="form-control form_infos form_answer" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+                <input type="text" id="id_img" name="id_img" value="<?php echo($_GET['img']) ?>" style="display:none;">
                 </div>
                 <div class="col-6 input_infos input_submit_button">
                   <div class = "submit_button_class">
