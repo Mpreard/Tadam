@@ -40,17 +40,6 @@
           </div>
         </div>
 
-        <?php
-        //Permet de tester si il y une variable 'error' en paramètre
-            if(isset($_GET["error"])){
-                $error = $_GET["error"];
-
-                //Si c'est le cas, on affiche code erroné
-                if ($error == 1){
-                    echo "<p>Le code est erroné</p>";
-                }
-            }
-        ?>
     </div>
     <div class="bottom_page">
       <div class="container mt-5 container_infos">
