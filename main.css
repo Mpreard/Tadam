@@ -172,13 +172,6 @@ p {
 
 }
 
-/*CSS page 2 */
-
-.presentation_text {
-    padding-top: 25px;
-    background-color: black;
-}
-
 
 /*MediaQueries*/
 @media screen and (max-width: 1100px) {

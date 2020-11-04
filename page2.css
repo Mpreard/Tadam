@@ -1,7 +1,15 @@
+.congrats{
+    font-size:30px;
+}
+
 #grille {
-    width: 45%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.wrap_grille{
+    background-color: black;
 }
 
 .image_grille {
@@ -11,6 +19,21 @@
     border-color: white;
 }
 
+.presentation_text {
+    padding-top: 8%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#first{
+    margin-block-start: 0em;
+}
+
+.end_presentation{
+    color: rgb(0 179 187);
+    margin-block-end: 0em;
+}
 @media screen and (max-width: 1678px) {
     .image_grille {
         width: 4.7%;
