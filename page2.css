@@ -1,3 +1,6 @@
+.image_grille {
+    width: 4.2%;
+}
 .congrats{
     font-size:30px;
 }
@@ -30,7 +33,9 @@
     background-color: black;
 }
 
-
+.bot_pres{
+    padding-bottom : 1.5%;
+}
 .presentation_text {
     padding-top: 8%;
     background-color: black;
@@ -78,6 +83,70 @@
     line-height: 1.25;
 }
 
+
+@media screen and (max-width: 500px){
+    .message {
+        position: absolute!important;
+        top: 19%;
+        left: 0!important;
+        width: 100%!important;
+        font-size: 1.8vw;
+        display: inline-block;
+        text-align: center;
+        border-radius: 0!important;
+        background: rgb(158,158,158);
+        margin-block-start: 0!important;
+        font-size: 50px!important;
+        background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(235,235,235,1) 25%, rgba(235,235,235,1) 75%, rgba(158,158,158,1) 100%);
+    }
+
+    .presentation_text {
+        padding-top: 40%;
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-size: 21px;
+    }
+
+    .congrats {
+        font-size: 45px;
+        margin-block-start: 0;
+    }
+
+    .wrap_grille {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .infos_container {
+        width: 100%!important;
+        left: 0%!important;
+        font-size: 3.5vw!important;
+        border-radius: 0!important;
+    }
+
+    .form_infos {
+        font-size: 1.7rem!important;
+    }
+
+    .submit_button {
+        font-size: 1.8rem;
+    }
+
+    .image_grille{
+        width: 4.2%;
+    }
+
+    .elancia {
+        height: 90%!important;
+    }
+
+    .tadam {
+        height: 90%!important;
+    }
+
+}
+
 /*
 @media screen and (max-width: 1678px) {
     .image_grille {
@@ -97,3 +166,4 @@
     }
 }
 */
+

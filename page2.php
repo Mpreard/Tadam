@@ -21,8 +21,9 @@ session_start();
 <html lang="en">  
   <head>
     <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galerie d'images</title>
-    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" type="text/css" href="page2.css">
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
@@ -39,10 +40,10 @@ session_start();
         <p class = "GG" id="first">Bien joué challenger, vous avez trouvé le code !</p>
         <p>Mais le jeu ne s'arrete pas la...</p>
         <p>Chaque jour, vous pourrez dévoiler une des cases et proposer une réponse.</p>
-        <p>Plus vous cumulez de réponses (correcte) plus vous aurez de chance d'être </br> tiré au sort pour gagner  partie de jeu chez TADAM ESCAPE</p>
+        <p>Plus vous cumulez de réponses (correcte) plus vous aurez de chance d'être tiré au sort pour gagner  partie de jeu chez TADAM ESCAPE</p>
         <p>Bon courage !</p>
         <p class="end_presentation">Alors ?</p>
-        <p class="end_presentation">Saurez-vous retrouver qui se cache derrière cette photo ?</p> 
+        <p class="end_presentation bot_pres">Saurez-vous retrouver qui se cache derrière cette photo ?</p> 
       </div>
       <div class="wrap_grille">
         <div id="grille">
