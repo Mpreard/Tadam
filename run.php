@@ -2,10 +2,9 @@
 
 session_start();
 
-$_SESSION['nom'] = $_POST['nom'];
-$_SESSION['prenom'] = $_POST['prenom'];
-$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
-
+$_SESSION['email'] = htmlspecialchars($_POST['email']);
+$_SESSION['prenom'] = htmlspecialchars($_POST['prenom']);
+$_SESSION['ip'] = htmlspecialchars($_SERVER['REMOTE_ADDR']);
 
 $code = '1234';
 
@@ -16,7 +15,7 @@ $nombre4 = $_POST['nombre4'];
 
 $nombreFinal = $nombre1 . $nombre2 . $nombre3 . $nombre4;
 
-if($nombreFinal === $code)
+if(isset($_SESSION['ip']) && isset($_SESSION['email']) && isset($_SESSION['prenom']) && $nombreFinal === $code )
 {
     header('Location: ./page2.php');
 } 

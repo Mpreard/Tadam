@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
   try{
@@ -10,14 +9,16 @@ session_start();
           die('Erreur : ' . $e->getMessage());
   }
 
-  if(!isset($_SESSION['ip']) && !isset($_SESSION['nom']) && !isset($_SESSION['prenom']))
+
+  if(!isset($_SESSION['ip']) || !isset($_SESSION['nom']) || !isset($_SESSION['prenom']))
   {
-    header("refresh:0, url=index.php");   
+    header("refresh:0 , url=index.php");
   }
 ?>
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
   <head>
     <meta charset="utf-8" />
     <title>Galerie d'images</title>
@@ -27,8 +28,8 @@ session_start();
   <body>
     <div class = "main_container">
       <div class = "logos_welcome">
-        <img class="logo tadam" src="assets/logos/logo_tadam.png">
-        <img class="logo elancia" src="assets/logos/logo_elancia.png">
+        <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="assets/logos/logo_tadam.png"></a>  
+        <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
         <div class ="welcome message">
           <img class ="logo cadenas" src="assets/logos/logo_cadenas.png">
           <p class ="congrats"><strong>Bravo !</strong></p>
@@ -91,7 +92,7 @@ session_start();
                   <p class="message_guess">Selon vous, qui se cache derrière cette photo ?</p> 
                 </div>
                 <div class="col-6 input_infos">
-                <input type="text" id="answer" name="answer" class="form-control form_infos form_answer" placeholder="Votre réponse" pattern="[A-Za-z]+" required />
+                <input type="text" id="answer" name="answer" class="form-control form_infos form_answer" placeholder="Votre réponse" required />
                 <input type="text" id="id_img" name="id_img" value="<?php echo($_GET['img']) ?>" style="display:none;">
                 </div>
                 <div class="col-6 input_infos input_submit_button">

@@ -40,7 +40,7 @@
                 <input id="nombre1" name="nombre1" class ="number_code" type="text" maxlength="1" required />
                 <input id="nombre2" name="nombre2" class ="number_code" type="text" maxlength="1" required />
                 <input id="nombre3" name="nombre3" class ="number_code" type="text" maxlength="1" required />
-                <input id="nombre4" name="nombre4" class ="number_code number_left" type="text" maxlength="1" required />
+                <input id="nombre4" name="nombre4" class ="number_code number_left" type="text" maxlength="1"required />
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
           <div class="row">
             <div class = "infos_container">
               <div class="col-6 input_infos">
-                <input type="text" id="nom" name="nom" class="form-control form_infos" placeholder="Nom"  pattern="[A-Za-z]+" required />
+                <input type="email" id="email" name="email" class="form-control form_infos" placeholder="Email" required />
               </div>
               <div class="col-6 input_infos">
                 <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" pattern="[A-Za-z]+" required />
@@ -78,6 +78,7 @@
     $(document).ready(function () {
       $(".jpa input").jqueryPincodeAutotab();
     });
+}
   </script>
 </body>
 <footer>

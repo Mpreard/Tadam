@@ -10,25 +10,24 @@
   }
 
         $answer = htmlspecialchars($_POST['answer']);
-        $id_img = htmlspecialchars($_GET['id_img']);
+        $id_img = htmlspecialchars($_POST['id_img']);
 
-        if(isset($_SESSION['ip']) && isset($_SESSION['nom']) && isset($_SESSION['prenom']))
-        {          
-          if(isset($id_img))
-          {
-            $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
-          } else 
-          {
-            exit("Veuillez choisir une image");
-          }
-          $bdd->exec('INSERT INTO user(first_name, last_name, ip_user) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['nom'].'", "'.$_SESSION['ip'].'", )');
-        } else 
-        {
-          exit("Un problème est survenu");
+        if(!isset($_SESSION['ip']) && !isset($_SESSION['email']) && !isset($_SESSION['prenom']))
+        {       
           header("refresh:2, url=index.php");
         }
+        elseif (!isset($id_img))
+        {   
+          header("refresh:2, url=page2.php");
+        } else 
+        {
+          $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
+          $bdd->exec('INSERT INTO user(first_name, email, ip_user) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'", "'.$_SESSION['ip'].'")');
 
-        $bdd->exec('INSERT INTO answer(user_answer) VALUES ("'.$answer.'")');
-
-        header("refresh:0, url=index.php");
+          $reponse = $bdd->query('SELECT id from user WHERE first_name = "'.$_SESSION['prenom'].'" AND last_name = "'.$_SESSION['email'].'" AND ip_user = "'.$_SESSION['ip'].'"');
+          $donnees = $reponse->fetch();
+          $bdd->exec('INSERT INTO answer(user_answer, id_user) VALUES ("'.$answer.'","'.$donnees['id'].'")');
+          
+          header("refresh:5, url=index.php");
+        } 
     ?>
