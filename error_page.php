@@ -33,7 +33,7 @@
     <img src="assets/logos/logo_crane.png" class="img_crane">
   </div> 
   </div>
-  <div class="bottom_page">
+  <div class="bottom_error_page">
   </div>
   <?php 
     //header("refresh:3;url=index.php");

@@ -195,6 +195,12 @@ p {
     width: 15%;
 }
 
+.bottom_error_page {
+    height: 16vh;
+    background: linear-gradient(90deg, rgba(1,112,117,1) 0%, rgba(0,179,187,1) 20%, rgba(0,179,187,1) 80%, rgba(1,112,117,1) 100%);
+}
+
+
 /*MediaQueries*/
 @media screen and (max-width: 1100px) {
     .infos_container {
@@ -211,7 +217,7 @@ p {
 @media screen and (max-width: 644px) {
     .error_message_div{
         background-color: transparent;
-        padding-top: 45%;
+        padding-top: 16%;
     }
 
     .error_message{
