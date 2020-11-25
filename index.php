@@ -78,7 +78,6 @@
     $(document).ready(function () {
       $(".jpa input").jqueryPincodeAutotab();
     });
-}
   </script>
 </body>
 <footer>
