@@ -10,7 +10,7 @@ session_start();
   }
 
 
-  if(!isset($_SESSION['ip']) || !isset($_SESSION['nom']) || !isset($_SESSION['prenom']))
+  if(!isset($_SESSION['ip']) || !isset($_SESSION['email']) || !isset($_SESSION['prenom']))
   {
     header("refresh:0 , url=index.php");
   }

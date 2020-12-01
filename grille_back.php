@@ -21,13 +21,29 @@
           header("refresh:2, url=page2.php");
         } else 
         {
-          $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
-          $bdd->exec('INSERT INTO user(first_name, email, ip_user) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'", "'.$_SESSION['ip'].'")');
+          $userExist = $bdd->query('SELECT email FROM user WHERE email = "'.$_SESSION['email'].'"');
+          $donnees = $userExist->fetch();
 
-          $reponse = $bdd->query('SELECT id from user WHERE first_name = "'.$_SESSION['prenom'].'" AND last_name = "'.$_SESSION['email'].'" AND ip_user = "'.$_SESSION['ip'].'"');
+          if(!isset($donnees['email'])){
+            $bdd->exec('INSERT INTO user(first_name, email, ip_user) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'", "'.$_SESSION['ip'].'")');
+          }
+          /*
+          $mostRecentDate = $bdd->query('SELECT date_time_check 
+                                        FROM answer 
+                                        INNER JOIN user ON answer.id_user = user.id 
+                                        WHERE email = "'.$_SESSION['email'].'" 
+                                              AND ip_user = "'.$_SESSION['ip'].'" 
+                                        HAVING MAX(answer.date_time_check)');
+
+          $donnees = $mostRecentDate->fetch();
+          */   
+          $reponse = $bdd->query('SELECT id FROM user WHERE email = "'.$_SESSION['email'].'"');
           $donnees = $reponse->fetch();
           $bdd->exec('INSERT INTO answer(user_answer, id_user) VALUES ("'.$answer.'","'.$donnees['id'].'")');
-          
+
+          $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
+
           header("refresh:5, url=index.php");
+          
         } 
     ?>
