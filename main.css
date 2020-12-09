@@ -196,7 +196,7 @@ p {
 }
 
 .bottom_error_page {
-    height: 16vh;
+    height: 8vh;
     background: linear-gradient(90deg, rgba(1,112,117,1) 0%, rgba(0,179,187,1) 20%, rgba(0,179,187,1) 80%, rgba(1,112,117,1) 100%);
 }
 
@@ -334,6 +334,16 @@ p {
     }
     .logos_welcome {
         height: 11vh;
+    }
+
+    .cadenas_error {
+        padding-top: 7%;
+    }
+
+    .error_page {
+        text-align: center;
+        background-color: black;
+        height: 81vh;
     }
 
     .form_container {
