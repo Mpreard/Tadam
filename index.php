@@ -1,7 +1,5 @@
 <?php 
   session_start();
-
-  $id_img
 ?>
 
 <!DOCTYPE html>

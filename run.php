@@ -1,24 +1,39 @@
 <?php
-
 session_start();
+
+try{
+    $bdd = new PDO('mysql:host=mysql-tima1617.alwaysdata.net;dbname=tima1617_bdd_tadam_elancia_concours;charset=utf8','tima1617','Maeltima16');
+}
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
 
 $_SESSION['email'] = htmlspecialchars($_POST['email']);
 $_SESSION['prenom'] = htmlspecialchars($_POST['prenom']);
-$_SESSION['ip'] = htmlspecialchars($_SERVER['REMOTE_ADDR']);
 
 $code = '1234';
-
 $nombre1 = $_POST['nombre1'];
 $nombre2 = $_POST['nombre2'];
 $nombre3 = $_POST['nombre3'];
 $nombre4 = $_POST['nombre4'];
-
 $nombreFinal = $nombre1 . $nombre2 . $nombre3 . $nombre4;
+$currentDate = date('Y-m-d'); 
 
-if(isset($_SESSION['ip']) && isset($_SESSION['email']) && isset($_SESSION['prenom']) && $nombreFinal === $code )
-{
-    header('Location: ./page2.php');
-} 
+$mostRecentDate = $bdd->query('SELECT MAX(date_time_check) AS "last_date" FROM answer 
+                            INNER JOIN user ON answer.id_user = user.id 
+                            WHERE user.email = "'.$_SESSION['email'].'"');
+
+$donnees = $mostRecentDate->fetch();
+
+if(!empty($donnees['last_date']) && isset($_SESSION['email']) && isset($_SESSION['prenom']) && $nombreFinal === $code){
+    if($donnees['last_date'] != $currentDate){
+        header('Location: ./page2.php');
+    }
+    else{
+        header('Location: ./error_page.php');
+    }
+}
 else
 {
     header('Location: ./error_page.php');
