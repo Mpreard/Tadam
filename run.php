@@ -8,10 +8,10 @@ $_SESSION['ip'] = htmlspecialchars($_SERVER['REMOTE_ADDR']);
 
 $code = '1234';
 
-$nombre1 = $_POST['nombre1'];
-$nombre2 = $_POST['nombre2'];
-$nombre3 = $_POST['nombre3'];
-$nombre4 = $_POST['nombre4'];
+$nombre1 = $_POST['nbr_1_code'];
+$nombre2 = $_POST['nbr_2_code'];
+$nombre3 = $_POST['nbr_3_code'];
+$nombre4 = $_POST['nbr_4_code'];
 
 $nombreFinal = $nombre1 . $nombre2 . $nombre3 . $nombre4;
 
