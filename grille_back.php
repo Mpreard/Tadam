@@ -16,22 +16,15 @@ if(!isset($_SESSION['email']) || !isset($_SESSION['prenom']) || !isset($answer))
 {      
   echo '<p> Erreur de remplissage <p>';
 } else 
-{
-  $userExist = $bdd->query('SELECT email FROM user WHERE email = "'.$_SESSION['email'].'"');
-  $donnees = $userExist->fetch();
-
-  if(!isset($donnees['email'])){
-    $bdd->exec('INSERT INTO user(first_name, email) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'")');
-  }
-  
+{  
   $reponse = $bdd->query('SELECT id FROM user WHERE email = "'.$_SESSION['email'].'"');
   $values = $reponse->fetch();
   $bdd->exec('INSERT INTO answer(user_answer, id_user) VALUES ("'.$answer.'","'.$values['id'].'")');
 
   if(isset($id_img)){
     $bdd->exec('UPDATE image SET display = 1 WHERE url = '.$id_img.'');
-  }
-
-  header("refresh:5, url=index.php"); 
+  } 
 }
+session_destroy();
+header('Location: ./index.php')
 ?>

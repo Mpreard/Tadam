@@ -18,6 +18,7 @@ $nombre2 = $_POST['nombre2'];
 $nombre3 = $_POST['nombre3'];
 $nombre4 = $_POST['nombre4'];
 $nombreFinal = $nombre1 . $nombre2 . $nombre3 . $nombre4;
+
 $currentDate = date('Y-m-d'); 
 
 $mostRecentDate = $bdd->query('SELECT MAX(date_time_check) AS "last_date" FROM answer 
@@ -26,16 +27,23 @@ $mostRecentDate = $bdd->query('SELECT MAX(date_time_check) AS "last_date" FROM a
 
 $donnees = $mostRecentDate->fetch();
 
-if(!empty($donnees['last_date']) && isset($_SESSION['email']) && isset($_SESSION['prenom']) && $nombreFinal === $code){
+if($nombreFinal === $code && isset($_SESSION['email']) && isset($_SESSION['prenom'])){
+    $userExist = $bdd->query('SELECT email FROM user WHERE email = "'.$_SESSION['email'].'"');
+    $userValues = $userExist->fetch();
+
+    if(!isset($userValues['email'])){
+        $bdd->exec('INSERT INTO user(first_name, email) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'")');  
+    }
+
     if($donnees['last_date'] != $currentDate){
         header('Location: ./page2.php');
-    }
-    else{
+    } else{
         header('Location: ./error_page.php');
     }
 }
 else
 {
+    session_destroy();
     header('Location: ./error_page.php');
 }
 ?>
