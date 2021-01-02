@@ -47,8 +47,10 @@ session_start();
       <div class="wrap_grille">
         <div id="grille">
           <?php
+            if(isset($_GET["img"])){
+              $_SESSION['click'] = true;
+            }
             $id = 1;
-            $clique = false;
             $lignenb = 0;
             $reponse = $bdd->query('SELECT url, display FROM image ORDER BY url ASC');
             while ($donnees = $reponse->fetch())
@@ -61,14 +63,16 @@ session_start();
               }
               if($donnees['display'] == 0)
               {
-                if(isset($_GET["img"]) && $id == $_GET["img"] && $clique == false)
+                if(isset($_GET["img"]) && $id == $_GET["img"] && $_SESSION['click'] == true)
                 {
                   echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
-                  $clique = true;
                 } else {
-                  echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png" class="image_grille"/></a>';
+                  if($_SESSION['click'] == true){
+                    echo'<img src="assets/img-grille/noir.png" class="image_grille"/>';
+                  } else {
+                    echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png" class="image_grille"/></a>';
+                  }
                 }
-              
               }
               elseif ($donnees['display'] == 1){
                   echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
@@ -78,8 +82,7 @@ session_start();
               }
               $id++;  
             }
-            $reponse->closeCursor();    
-          
+            $reponse->closeCursor();  
           ?>
         </div>
       </div>
