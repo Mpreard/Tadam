@@ -13,6 +13,8 @@ $_SESSION['email'] = htmlspecialchars($_POST['email']);
 $_SESSION['prenom'] = htmlspecialchars($_POST['prenom']);
 $_SESSION['click'] = 0;
 $_SESSION['answer'] = 'ouais';
+$_SESSION['verification_answer'] = null;
+
 
 $code = '1234';
 $nombre1 = $_POST['nbr_1_code'];
@@ -45,7 +47,7 @@ if($nombreFinal === $code && isset($_SESSION['email']) && isset($_SESSION['preno
         //TO DO : METTRE LA PAGE D'ERREUR
         header('Location: ./index.php');
     }
-    
+
     //Retourne l'user possédant l'email rentrée  
     $userExist = $bdd->query('SELECT email FROM user WHERE email = "'.$_SESSION['email'].'"');
     $userValues = $userExist->fetch();

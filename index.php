@@ -54,7 +54,7 @@
                 <input type="email" id="email" name="email" class="form-control form_infos" placeholder="Email" autocomplete="false" onfocus="entry()" onblur="exit()" required />
               </div>
               <div class="col-6 input_infos">
-                <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" pattern="[A-Za-z]+" autocomplete="false" onfocus="entry()" onblur="exit()" required />
+                <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" autocomplete="false" onfocus="entry()" onblur="exit()" required />
               </div>
               <div class="col-6 input_infos input_submit_button">
                 <div class = "submit_button_class">
