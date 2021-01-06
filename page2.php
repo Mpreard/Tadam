@@ -11,7 +11,8 @@ session_start();
 
   if(!isset($_SESSION['email']) || !isset($_SESSION['prenom']))
   {
-    header('Location: ./index.php');
+    $_SESSION['erreur'] = 'Vous n\'avais pas rempli le formulaire précédent !';
+    header('Location: ./error_page.php');
   }
 ?>
 

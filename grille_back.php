@@ -9,12 +9,13 @@ try{
   die('Erreur : ' . $e->getMessage());
 }
 
-$answer = htmlspecialchars($_POST['answer']);
+$answer = strtolower(htmlspecialchars($_POST['answer']));
 $id_img = htmlspecialchars($_POST['id_img']);
 
-if(!isset($_SESSION['email']) || !isset($_SESSION['prenom']) || !isset($answer))
-{      
-  echo '<p> Erreur de remplissage <p>';  
+if(empty($_SESSION['email']) || empty($_SESSION['prenom']) || empty($answer))
+{
+  $_SESSION['erreur'] = 'Une erreur s\'est produite... !';  
+  header('Location: ./error_page.php');    
 } 
 else
 {  

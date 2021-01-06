@@ -120,7 +120,7 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
-      $(".jpa input").jqueryPincodeAutotab();
+      $(".number_code").jqueryPincodeAutotab();
     });
   </script>
 </body>
