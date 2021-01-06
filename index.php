@@ -12,7 +12,6 @@
   <title>Concours Tadam - Elancia</title>
   <link rel="stylesheet" type="text/css" href="main.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <script src="main.js"></script>
   <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>
 
 </head>

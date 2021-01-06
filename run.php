@@ -14,6 +14,7 @@ $_SESSION['prenom'] = htmlspecialchars(strtolower($_POST['prenom']));
 $_SESSION['click'] = 0;
 $_SESSION['answer'] = 'ouais';
 $_SESSION['erreur'] = '';
+$_SESSION['result'] = '';
 
 
 $code = '1234';
@@ -43,7 +44,7 @@ if($nombreFinal === $code && !empty($_SESSION['email']) && !empty($_SESSION['pre
     if(!empty($right_answer['email']))
     {        
         $_SESSION['erreur'] = 'Vous avez déjà donné la bonne réponse !';
-        header('Location: ./index.php');
+        header('Location: ./error_page.php');
     } else {
         //Retourne l'user possédant l'email rentrée  
         $userExist = $bdd->query('SELECT email FROM user WHERE email = "'.$_SESSION['email'].'"');
