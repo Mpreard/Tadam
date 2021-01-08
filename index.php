@@ -71,43 +71,14 @@
 
   function entry() {
     if (window.matchMedia("(max-width: 481px)").matches) {
-      console.log("test");
-      var form_container = document.getElementById("form_container");
-      var bottom_page = document.getElementById("bottom_page");
-      var nombre1 = document.getElementById("nombre1");
-      var nombre2 = document.getElementById("nombre2");
-      var nombre3 = document.getElementById("nombre3");
-      var nombre4 = document.getElementById("nombre4");
-      var welcome_message = document.getElementById("welcome_message");
-      form_container.style.display = "none";
-      bottom_page.style.paddingTop = "10%";
-      bottom_page.style.paddingBottom = "150%";
-      nombre1.style.display = "none";
-      nombre2.style.display = "none";
-      nombre3.style.display = "none";
-      nombre4.style.display = "none";
-      welcome_message.style.display = "none";
+      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     } else {
     }
   }
 
   function exit() {
-    console.log("sortie");
     if (window.matchMedia("(max-width: 481px)").matches) {
-      var form_container = document.getElementById("form_container");
-      var bottom_page = document.getElementById("bottom_page");
-      var nombre1 = document.getElementById("nombre1");
-      var nombre2 = document.getElementById("nombre2");
-      var nombre3 = document.getElementById("nombre3");
-      var nombre4 = document.getElementById("nombre4");
-      var welcome_message = document.getElementById("welcome_message");
-      form_container.style.display = "block";
-      bottom_page.style.paddingTop = "0%";
-      nombre1.style.display = "inline-block";
-      nombre2.style.display = "inline-block";
-      nombre3.style.display = "inline-block";
-      nombre4.style.display = "inline-block";
-      welcome_message.style.display = "inline-block";
+
     } else {
     }
   }
