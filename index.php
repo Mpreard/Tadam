@@ -1,12 +1,19 @@
 <?php 
   session_start();
-
-  $id_img
+?>
+<!-- permet de supprimer le cache -->
+<?php
+header('Cache-Control: no-cache, must-revalidate');
+header('Cache-Control: post-check=0, pre-check=0', false);
+header('Pragma: no-cache');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
+	
+<?php header("Cache-Control:no-cache"); ?>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,42 +31,42 @@
     <div class = "logos_welcome">
       <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="assets/logos/logo_tadam.png"></a>  
       <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
-      <div class ="welcome message">
+      <div class ="welcome message" id="welcome_message">
         <img class ="logo cadenas" src="assets/logos/logo_cadenas.png">
         <p class ="welcome_challenger"><strong> Bienvenue Challenger !</strong></p>
         <p class ="enter_code">Veuillez entrer le code trouvé grâce à l'énigme.</p>
         <p class = "GL"> Bonne chance ! </p>
       </div>
     </div>
-    <div class="form_container">
+    <div class="form_container" id="form_container">
       <form action="run.php" id="formulaire" class="form_group_button" method="POST">
         <div class="container code_square form_group_button">
           <div class="row">
             <div class="col-12 jpa">
               <div class = code_container>
-                <input id="nombre1" name="nombre1" class ="number_code" type="text" maxlength="1" required />
-                <input id="nombre2" name="nombre2" class ="number_code" type="text" maxlength="1" required />
-                <input id="nombre3" name="nombre3" class ="number_code" type="text" maxlength="1" required />
-                <input id="nombre4" name="nombre4" class ="number_code number_left" type="text" maxlength="1"required />
+                <input id="nombre1" name="nbr_1_code" class ="number_code" type="number" maxlength="1" autocomplete="false" required />
+                <input id="nombre2" name="nbr_2_code" class ="number_code" type="number" maxlength="1" autocomplete="false" required />
+                <input id="nombre3" name="nbr_3_code" class ="number_code" type="number" maxlength="1" autocomplete="false" required />
+                <input id="nombre4" name="nbr_4_code" class ="number_code number_left" type="number" maxlength="1" autocomplete="false" required />
               </div>
             </div>
           </div>
         </div>
 
     </div>
-    <div class="bottom_page">
-      <div class="container mt-5 container_infos">
+    <div class="bottom_page" id="bottom_page" >
+      <div class="container container_infos">
           <div class="row">
             <div class = "infos_container">
               <div class="col-6 input_infos">
-                <input type="email" id="email" name="email" class="form-control form_infos" placeholder="Email" required />
+                <input type="email" id="email" name="email" class="form-control form_infos" placeholder="Email" autocomplete="false" onfocus="entry()" onblur="exit()" required />
               </div>
               <div class="col-6 input_infos">
-                <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" pattern="[A-Za-z]+" required />
+                <input type="text" id="prenom" name="prenom" class="form-control form_infos" placeholder="Prenom" pattern="[A-Za-z]+" autocomplete="false" onfocus="entry()" onblur="exit()" required />
               </div>
               <div class="col-6 input_infos input_submit_button">
                 <div class = "submit_button_class">
-                  <input type="submit" class = "submit_button" value="Commencez le jeu !" />
+                  <input type="submit" id="submit_button" class ="submit_button" value="Commencez le jeu !" />
                 </div>
               </div>
             </div>
@@ -69,7 +76,23 @@
     </div>
   </div>
 
+<script>
 
+  function entry() {
+    if (window.matchMedia("(max-width: 481px)").matches) {
+      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    } else {
+    }
+  }
+
+  function exit() {
+    console.log("sortie");
+    if (window.matchMedia("(max-width: 481px)").matches) {
+    } else {
+    }
+  }
+
+</script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="dist/js/jquery-pincode-autotab.min.js"></script>

@@ -8,6 +8,16 @@
     src: url("assets/typo/Futura-T-OT-Book_19064.ttf");
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -69,9 +79,9 @@ input {
 }
 
 .number_code{
-    font-size: 5em;
-    width: 1.5em;
-    height: 1.5em;
+    font-size: 4em;
+    width: 2.2em;
+    height: 2.2em;
     font-family: "Futura-T-OT";
     color: #d4181f;
     margin-right: 0.5em;
@@ -213,7 +223,16 @@ p {
         left: 29%;
     }
 }
-
+@media screen and (max-width: 700px) {
+    .number_code{
+        font-size: 3em;
+        width: 2.2em;
+        height: 2.2em;
+        font-family: "Futura-T-OT";
+        color: #d4181f;
+        margin-right: 0.5em;
+    }
+}
 @media screen and (max-width: 644px) {
     .error_message_div{
         background-color: transparent;
@@ -239,6 +258,13 @@ p {
         font-size: 1.8rem;
     }
     
+    .infos_container {
+        position: static;
+    }
+
+    .bottom_page{
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 415px){
@@ -301,7 +327,7 @@ p {
     }
 
     .number_code {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .infos_container {
@@ -322,18 +348,29 @@ p {
     }
 }
 
+@media screen and (max-width: 560px) {
+    .number_code{
+        font-size: 2.5em;
+        width: 2.2em;
+        height: 2.2em;
+        font-family: "Futura-T-OT";
+        color: #d4181f;
+        margin-right: 0.5em;
+    }
+}
+
 @media screen and (max-width: 523px) {
     .number_code {
-        font-size: 3.8em;
+        font-size: 2.5em;
     }
 }
 
 @media screen and (max-width: 499px) {
     .number_code {
-        font-size: 3.2em;
+        font-size: 2.5em;
     }
     .logos_welcome {
-        height: 11vh;
+        height: 10vh;
     }
 
     .cadenas_error {
@@ -374,7 +411,7 @@ p {
         width: 100%;
         background: white;
         left: 0%;
-        top: 11%;
+        top: 10%;
         height: 20%!important;
         position: absolute;
         border-radius: 0;
@@ -438,11 +475,11 @@ p {
     }
 
     .form_container {
-        height: 78vh;
+        height: 70vh;
     }
 
     .bottom_page {
-        height: 11vh;
+        height: 20vh;
     }
 
     .form_container {
@@ -450,7 +487,7 @@ p {
     }
 
     .number_code {
-        font-size: 3.8em;
+        font-size: 2.5em;
     }
 
     .number_code {
@@ -466,8 +503,8 @@ p {
     }
     .form-control {
         display: inline-block!important;
-        font-family: "Lemon Milk Bold"!important;
-        font-weight: bolder!important;
+        /*font-family: "Lemon Milk Bold"!important;
+        font-weight: bolder!important;*/
         padding: .25rem .75rem!important;
         font-size: 1rem!important;
         width: 75%!important;
@@ -505,7 +542,7 @@ p {
     }
 
     .number_code {
-        font-size: 3.3em;
+        font-size: 2.4em;
     }
 
     .infos_container {
@@ -539,8 +576,13 @@ p {
 
     .form-control {
         padding: .25rem .75rem!important;
-        font-size: 1rem!important;
+        font-size: 0.9rem!important;
         line-height: 0!important;
+    }
+}
+@media screen and (max-width: 385px){
+    .number_code {
+        font-size: 2.2em;
     }
 }
 @media screen and (max-width: 420px) and (max-height: 800px){
@@ -551,14 +593,14 @@ p {
 
 @media screen and (max-width: 420px) and (max-height: 750px){
     .bottom_page {
-        height: 13vh;
+        height: 24vh;
     }
     .infos_container {
         height: 173%!important;
         top: -120%!important;
     }
     .form_container {
-        height: 76vh;
+        height: 66vh;
     }
     .message {
         height: 19%!important;
@@ -599,7 +641,7 @@ p {
 
 @media screen and (max-width: 361px){
     .number_code {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .form_container {
@@ -614,7 +656,7 @@ p {
 
 @media screen and (max-width: 350px){
 .number_code {
-    font-size: 2.7em;
+    font-size: 1.8em;
 }
 }
 
