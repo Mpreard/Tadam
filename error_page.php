@@ -11,9 +11,6 @@
   <title>Concours Tadam - Elancia</title>
   <link rel="stylesheet" type="text/css" href="main.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <script src="main.js"></script>
-  <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>
-
 </head>
 
 <body>
@@ -27,7 +24,7 @@
     </div>
     <div class ="error_page">
     <div class="error_message_div">
-        <h1 class="error_message">ERREUR DANS VOTRE CODE</h1>
+        <h1 class="error_message"><?php echo $_SESSION['erreur']; ?></h1>
     </div>
   <div class="error_image">
     <img src="assets/logos/logo_crane.png" class="img_crane">
@@ -36,18 +33,8 @@
   <div class="bottom_error_page">
   </div>
   <?php 
-    header("refresh:3;url=index.php");
+    header("refresh:4;url=index.php");
   ?>
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="dist/js/jquery-pincode-autotab.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".jpa input").jqueryPincodeAutotab();
-    });
-  </script>
 </body>
 <footer>
     <div class="bottom"></div>

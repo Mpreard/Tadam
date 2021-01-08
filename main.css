@@ -479,7 +479,11 @@ p {
     }
 
     .bottom_page {
+<<<<<<< HEAD
         height: 20vh;
+=======
+        height: 18vh;
+>>>>>>> 4f4f791c562c913418e63f23f986ae888cb321e5
     }
 
     .form_container {
