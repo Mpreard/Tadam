@@ -10,7 +10,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Concours Tadam - Elancia</title>
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>
 
@@ -20,10 +20,10 @@
   
   <div class = "main_container">
     <div class = "logos_welcome">
-      <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="assets/logos/logo_tadam.png"></a>  
-      <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
+      <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="../assets/logos/logo_tadam.png"></a>  
+      <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="../assets/logos/logo_elancia.png"></a>
       <div class ="welcome message" id="welcome_message">
-        <img class ="logo cadenas" src="assets/logos/logo_cadenas.png">
+        <img class ="logo cadenas" src="../assets/logos/logo_cadenas.png">
         <p class ="welcome_challenger"><strong> Bienvenue Challenger !</strong></p>
         <p class ="enter_code" id="enter_code">Veuillez entrer le code trouvé grâce à l'énigme.</p>
         <p class = "GL" id="GL"> Bonne chance ! </p>

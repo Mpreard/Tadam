@@ -23,8 +23,8 @@ session_start();
     <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galerie d'images</title>
-    <link rel="stylesheet" type="text/css" href="page2.css">
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/page2.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
   </head>
   <body>
     <div class = "main_container">

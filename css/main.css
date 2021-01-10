@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Lemon Milk Bold";
-    src: url("assets/typo/LEMONMILK-Bold.otf");
+    src: url("../assets/typo/LEMONMILK-Bold.otf");
   }
   
 @font-face {
     font-family: "Futura-T-OT";
-    src: url("assets/typo/Futura-T-OT-Book_19064.ttf");
+    src: url("../assets/typo/Futura-T-OT-Book_19064.ttf");
 }
 
 input[type=number]::-webkit-outer-spin-button,
