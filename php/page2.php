@@ -56,8 +56,8 @@ session_start();
             $reponse = $bdd->query('SELECT url, display FROM image ORDER BY url ASC');
             while ($donnees = $reponse->fetch())
             {
-              $compteur = $id/19;
-              if(fmod($id-1, 19) == 0)
+              $compteur = $id/12;
+              if(fmod($id-1, 12) == 0)
               {
                 $lignenb = $lignenb + 1 ;
                 echo '<div class="ligne'.$lignenb.'">';
@@ -66,19 +66,19 @@ session_start();
               {
                 if(isset($_GET["img"]) && $id == $_GET["img"] && $_SESSION['click'] == true)
                 {
-                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/' . $id . '.jpg"/>';
+                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/image_noel_concours_tadam_' . $id . '.png"/>';
                 } else {
                   if($_SESSION['click'] == true){
-                    echo'<img src="../assets/img-grille/noir.png" class="image_grille"/>';
+                    echo'<img src="../assets/img-grille/noir.png"   class="image_grille"/>';
                   } else {
                     echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="../assets/img-grille/noir.png" class="image_grille"/></a>';
                   }
                 }
               }
               elseif ($donnees['display'] == 1){
-                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/' . $id . '.jpg"/>';
+                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/image_noel_concours_tadam_' . $id . '.png"/>';
               } 
-              if(fmod($id, 19) == 0){
+              if(fmod($id, 12) == 0){
                 echo '</div>';
               }
               $id++;  
