@@ -29,10 +29,10 @@ session_start();
   <body>
     <div class = "main_container">
       <div class = "logos_welcome">
-        <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="assets/logos/logo_tadam.png"></a>  
-        <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="assets/logos/logo_elancia.png"></a>
+        <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="../assets/logos/logo_tadam.png"></a>  
+        <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="../assets/logos/logo_elancia.png"></a>
         <div class ="welcome message">
-          <img class ="logo cadenas" src="assets/logos/logo_cadenas.png">
+          <img class ="logo cadenas" src="../assets/logos/logo_cadenas.png">
           <p class ="congrats"><strong>Bravo !</strong></p>
         </div>
       </div>
@@ -66,17 +66,17 @@ session_start();
               {
                 if(isset($_GET["img"]) && $id == $_GET["img"] && $_SESSION['click'] == true)
                 {
-                  echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
+                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/' . $id . '.jpg"/>';
                 } else {
                   if($_SESSION['click'] == true){
-                    echo'<img src="assets/img-grille/noir.png" class="image_grille"/>';
+                    echo'<img src="../assets/img-grille/noir.png" class="image_grille"/>';
                   } else {
-                    echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="assets/img-grille/noir.png" class="image_grille"/></a>';
+                    echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="../assets/img-grille/noir.png" class="image_grille"/></a>';
                   }
                 }
               }
               elseif ($donnees['display'] == 1){
-                  echo '<img class="image_grille" id='.$id.' src="assets/img-grille/' . $id . '.jpg"/>';
+                  echo '<img class="image_grille" id='.$id.' src="../assets/img-grille/' . $id . '.jpg"/>';
               } 
               if(fmod($id, 19) == 0){
                 echo '</div>';
