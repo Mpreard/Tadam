@@ -30,12 +30,12 @@ else
   if ($answer === $_SESSION['answer']) 
   {
     $bdd->exec('INSERT INTO answer(user_answer, id_user, right_answer) VALUES ("'.$answer.'","'.$values['id'].'", 1)');
-    header('Location: ./result.php');
+    header('Location: ./resultat.php');
     $_SESSION['result'] = 'victoire';
   } else 
   {
     $bdd->exec('INSERT INTO answer(user_answer, id_user, right_answer) VALUES ("'.$answer.'","'.$values['id'].'", 0)');
-    header('Location: ./result.php');
+    header('Location: ./resultat.php');
     $_SESSION['result'] = 'defaite';
   } 
 }

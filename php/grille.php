@@ -71,7 +71,7 @@ session_start();
                   if($_SESSION['click'] == true){
                     echo'<img src="../assets/img-grille/noir.png"   class="image_grille"/>';
                   } else {
-                    echo'<a id='.$id.'  class="image_cliquable" href="page2.php?img='.$id.'"><img src="../assets/img-grille/noir.png" class="image_grille"/></a>';
+                    echo'<a id='.$id.'  class="image_cliquable" href="grille.php?img='.$id.'"><img src="../assets/img-grille/noir.png" class="image_grille"/></a>';
                   }
                 }
               }
@@ -81,7 +81,7 @@ session_start();
               if(fmod($id, 12) == 0){
                 echo '</div>';
               }
-              $id++;  
+              $id++;      
             }
             $reponse->closeCursor();  
           ?>

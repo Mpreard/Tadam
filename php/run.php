@@ -17,7 +17,7 @@ $_SESSION['erreur'] = '';
 $_SESSION['result'] = '';
 
 
-$code = '1234';
+$code = '6923';
 $nombre1 = $_POST['nbr_1_code'];
 $nombre2 = $_POST['nbr_2_code'];
 $nombre3 = $_POST['nbr_3_code'];
@@ -54,7 +54,7 @@ if($nombreFinal === $code && !empty($_SESSION['email']) && !empty($_SESSION['pre
         {
             $bdd->exec('INSERT INTO user(first_name, email) VALUES("'.$_SESSION['prenom'].'","'.$_SESSION['email'].'")');  
         }
-        header('Location: ./page2.php');
+        header('Location: ./grille.php');
     }
 }
 else

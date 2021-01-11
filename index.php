@@ -21,7 +21,7 @@
   <div class = "main_container">
     <div class = "logos_welcome">
       <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="./assets/logos/logo_tadam.png"></a>  
-      <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="./assets/logos/logo_elancia.png"></a>
+      <a href = "" target="_blank"><img class="logo elancia" src="./assets/logos/cadeau_rouge.png"></a>
       <div class ="welcome message" id="welcome_message">
         <img class ="logo cadenas" src="./assets/logos/logo_cadenas.png">
         <p class ="welcome_challenger"><strong> Bienvenue Challenger !</strong></p>
