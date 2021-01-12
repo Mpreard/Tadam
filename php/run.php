@@ -9,14 +9,15 @@ catch (Exception $e)
     die('Erreur : ' . $e->getMessage());
 }
 
+//Valeur de session
 $_SESSION['email'] = htmlspecialchars(strtolower($_POST['email']));
 $_SESSION['prenom'] = htmlspecialchars(strtolower($_POST['prenom']));
 $_SESSION['click'] = 0;
-$_SESSION['answer'] = 'ouais';
+$_SESSION['answer'] = 'gerardjugnot';
 $_SESSION['erreur'] = '';
 $_SESSION['result'] = '';
 
-
+//Code
 $code = '6923';
 $nombre1 = $_POST['nbr_1_code'];
 $nombre2 = $_POST['nbr_2_code'];
@@ -57,6 +58,7 @@ if($nombreFinal === $code && !empty($_SESSION['email']) && !empty($_SESSION['pre
         header('Location: ./grille.php');
     }
 }
+//Affichage des erreurs
 else
 {
     if($nombreFinal != $code){
