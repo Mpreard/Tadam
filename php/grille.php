@@ -25,12 +25,13 @@ session_start();
     <title>Galerie d'images</title>
     <link rel="stylesheet" type="text/css" href="../css/page2.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   </head>
   <body>
     <div class = "main_container">
       <div class = "logos_welcome">
         <a href = "https://www.tadamescape.fr/" target="_blank"><img class="logo tadam" src="../assets/logos/logo_tadam.png"></a>  
-        <a href = "https://www.elancia.fr/" target="_blank"><img class="logo elancia" src="../assets/logos/logo_elancia.png"></a>
+        <img class="logo quiestce" src="../assets/logos/logo_quiestce.png">
         <div class ="welcome message">
           <img class ="logo cadenas" src="../assets/logos/logo_cadenas.png">
           <p class ="congrats"><strong>Bravo !</strong></p>

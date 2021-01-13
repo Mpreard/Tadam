@@ -43,10 +43,11 @@ html, body {
     
 }
 
-.elancia {
-    float:right;
-    height: 100%;
-    padding-top : 3%;
+.quiestce {
+    float: right;
+    height: 81%;
+    padding-top: 2%;
+    padding-right: 3%;
 }
 
 .message {
@@ -107,7 +108,7 @@ p {
 
 .form_container {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,119,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 100%);
-    padding-top: 12rem!important;
+    padding-top: 15rem!important;
     height: 73vh;
 }
 
@@ -417,7 +418,7 @@ p {
         background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(235,235,235,1) 25%, rgba(235,235,235,1) 75%, rgba(158,158,158,1) 100%);
     }
 
-    .elancia {
+    .quiestce {
         float: none;
         height: 100%;
         padding-right: 3%;
