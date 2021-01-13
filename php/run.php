@@ -39,7 +39,7 @@ if($nombreFinal === $code && !empty($_SESSION['email']) && !empty($_SESSION['pre
     //Email récupéré si l'utilisateur à donner la bonne réponse
     $reponse = $bdd->query('SELECT user.email FROM `user` 
                         INNER JOIN answer ON user.id = answer.id_user
-                         WHERE user.email = "'.$_SESSION['email'].'" AND answer.right_answer = 1');
+                        WHERE user.email = "'.$_SESSION['email'].'" AND answer.right_answer = 1');
     $right_answer = $reponse->fetch();
 
     if(!empty($right_answer['email']))

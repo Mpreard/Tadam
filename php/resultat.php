@@ -31,7 +31,7 @@
                             </div>
         
                             <div class="error_image">
-                                <img src="../assets/logos/logo_crane.png" class="img_crane">
+                                <img src="../assets/logos/gerard.png" class="img_crane">
                             </div> 
                         </div>';
                 } else {
