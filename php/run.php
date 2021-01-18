@@ -19,7 +19,7 @@ $_SESSION['erreur'] = '';
 $_SESSION['result'] = '';
 
 //Code
-$code = '6923';
+$code = '1234';
 $nombre1 = $_POST['nbr_1_code'];
 $nombre2 = $_POST['nbr_2_code'];
 $nombre3 = $_POST['nbr_3_code'];

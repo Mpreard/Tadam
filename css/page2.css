@@ -87,7 +87,7 @@
 @media screen and (max-width: 500px){
     .message {
         position: absolute!important;
-        top: 19%;
+        top: 10%;
         left: 0!important;
         width: 100%!important;
         font-size: 1.8vw;
@@ -147,6 +147,19 @@
 
 }
 
+@media screen and (max-width: 499px){
+.logos_welcome {
+    height: 10vh;
+}
+}
+
+@media screen and (max-width: 499px) {
+    .error_page {
+        text-align: center;
+        background-color: black;
+        height: 104vh!important;
+    }
+}
 /*
 @media screen and (max-width: 1678px) {
     .image_grille {

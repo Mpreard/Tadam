@@ -39,8 +39,21 @@ html, body {
 .tadam {
     float:left;
     height: 100%;
-    padding-left : 3%;
+    padding-left : 1%;
     
+}
+
+#nombre1{
+    color: #189bab;
+}
+#nombre2{
+    color:#464490;
+}
+#nombre3{
+    color: #5c3894;
+}
+#nombre4{
+    color:#b92797;
 }
 
 .quiestce {
@@ -192,25 +205,28 @@ p {
     margin-top: 7%;
     color: white;
     display: inline-block;
-    background-color: #00b3bb;
 }
 
 .error_message{
-    margin-bottom: 0;
+    margin-top: 2%;
 }
 
 .img_crane{
     vertical-align: middle;
     border-style: none;
-    width: 15%;
+    width: 16%;
 }
+
+
 
 .bottom_error_page {
     height: 8vh;
     background: linear-gradient(90deg, #0d5e64 0%, #20244c 25%, #392259 75%,#8b176b 100%);
 }
 
-
+.error_message{
+    font-size: 21px;
+}
 /*MediaQueries*/
 @media screen and (max-width: 1100px) {
     .infos_container {
@@ -249,7 +265,10 @@ p {
         font-size: 1.8rem;
     }
     .img_crane {
-        width: 40%;
+        width: 46%;
+    }
+    .error_image{
+        padding-top: 16%;
     }
     
 }
@@ -261,7 +280,7 @@ p {
     }
 
     .error_message{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     
     .infos_container {
@@ -275,13 +294,13 @@ p {
 
 @media screen and (max-width: 415px){
     .error_message_div{
-        padding-top: 55%;
+        padding-top: 34%;
     }
 }
 
 @media screen and (max-width: 415px) and (max-height: 737px){
     .error_message_div{
-        padding-top: 45%;
+        padding-top: 34%;
     }
 }
 
@@ -386,7 +405,7 @@ p {
     .error_page {
         text-align: center;
         background-color: black;
-        height: 81vh;
+        height: 82vh;
     }
 
     .form_container {
@@ -426,7 +445,7 @@ p {
 
     .quiestce {
         float: none;
-        height: 85%;
+        height: 60%;
         padding-right: 3%;
         padding-left: 14%;
     }
@@ -485,7 +504,7 @@ p {
     }
 
     .bottom_page {
-        height: 18vh;
+        height: 8vh;
     }
 
     .form_container {
@@ -599,7 +618,7 @@ p {
 
 @media screen and (max-width: 420px) and (max-height: 750px){
     .bottom_page {
-        height: 24vh;
+        height: 9vh;
     }
     .infos_container {
         height: 173%!important;
@@ -614,7 +633,7 @@ p {
         }
      }
     .message {
-        height: 19%!important;
+        height: 21%!important;
     }
     .form_group_button {
         max-width: 100%!important;
