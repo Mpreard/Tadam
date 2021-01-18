@@ -72,7 +72,9 @@
   function entry(n) {
     if (window.matchMedia("(max-width: 481px)").matches) {
       if (n == 1) {
-      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        if (navigator.userAgent.toLowerCase().match(/android/)) {
+          $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        }
       var text = document.getElementById('enter_code')
       text.innerText ="Trouverez vous le bon code ?" ;
       var text2 = document.getElementById('GL')
