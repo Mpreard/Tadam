@@ -27,7 +27,7 @@
                     echo '<div class ="error_page">
                             <div class="error_message_div">
                                 <h1 class="error_message"> Vous avez gagner, Félicitation !!! </h1>
-                                <h2 class="error_message"> Tirage au sort le .... </h2>
+                                <h2 class="error_message" style="magin-bottom : 5%;"> Tirage au sort le .... </h2>
                             </div>
         
                             <div class="error_image">
