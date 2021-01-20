@@ -39,12 +39,11 @@ session_start();
         </div>
       </div>
       <div class = "presentation_text">
-        <p class = "GG" id="first">Bien joué challenger, vous avez trouvé le code !</p>
-        <p>Mais le jeu ne s'arrete pas la...</p>
+        <p class = "GG" id="first">Bien joué, mais le jeu ne s'arrête pas là…</p>
         <p>Voici la photo mystère… mais QUI-EST-CE ?</p>
         <p>Qui se cache derrière cette image ? </p>
         <p class="midlle">Tous les jours, vous pourrez dévoiler une des cases et proposer une réponse.</p>
-        <p>Chaque joueur contribue à déverrouiller les cases masquées. Une fois cliquée, elles sont visibles par tous. </p>
+        <p>Chaque joueur contribue à déverrouiller les cases masquées. Une fois cliquées, elles sont visibles par tous. </p>
         <p>N’oubliez pas, vous pouvez revenir jouer demain et proposer un autre nom. </p>
         <p>Un tirage au sort pour gagner de nombreuses surprises (parties d’escape, places, jeux…) sera effectué à la fin du concours. </p>
         <p>Bon courage !</p>
