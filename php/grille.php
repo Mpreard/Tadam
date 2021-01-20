@@ -41,17 +41,12 @@ session_start();
       <div class = "presentation_text">
         <p class = "GG" id="first">Bien joué challenger, vous avez trouvé le code !</p>
         <p>Mais le jeu ne s'arrete pas la...</p>
-<<<<<<< HEAD
         <p>Voici la photo mystère… mais QUI-EST-CE ?</p>
         <p>Qui se cache derrière cette image ? </p>
         <p class="midlle">Tous les jours, vous pourrez dévoiler une des cases et proposer une réponse.</p>
         <p>Chaque joueur contribue à déverrouiller les cases masquées. Une fois cliquée, elles sont visibles par tous. </p>
         <p>N’oubliez pas, vous pouvez revenir jouer demain et proposer un autre nom. </p>
         <p>Un tirage au sort pour gagner de nombreuses surprises (parties d’escape, places, jeux…) sera effectué à la fin du concours. </p>
-=======
-        <p>Chaque jour, vous pourrez dévoiler une des cases et proposer une réponse.</p>
-        <p>Un tirage au sort aura lieu pour gagner partie de jeu chez TADAM ESCAPE</p>
->>>>>>> e3930948570e9e1fba5ef820436a77b569fcefc7
         <p>Bon courage !</p>
         <div class="bottom_text">
           <p class="end_presentation">Alors ?</p>
