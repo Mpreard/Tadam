@@ -39,7 +39,7 @@ html, body {
 .tadam {
     float:left;
     height: 100%;
-    padding-left : 1%;
+    padding-left : 3%;
     
 }
 
@@ -47,7 +47,7 @@ html, body {
     color: #189bab;
 }
 #nombre2{
-    color:#464490;
+    color:#1c3352;
 }
 #nombre3{
     color: #5c3894;

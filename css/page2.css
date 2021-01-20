@@ -3,6 +3,8 @@
 }
 .congrats{
     font-size:30px;
+    margin-bottom: 7%;
+    margin-top: 3%;
 }
 
 #grille {
@@ -33,8 +35,10 @@
     background-color: black;
 }
 
-.bot_pres{
-    padding-bottom : 1.5%;
+.bottom_text{
+    padding-bottom: 1.5%;
+    width: 27.8%;
+    display: inline-block;
 }
 .presentation_text {
     padding-top: 8%;
@@ -46,16 +50,22 @@
 
 #first{
     margin-block-start: 0em;
+    margin-block-end: 0em; 
+}
+
+.midlle{
+    margin-block-end: 0em; 
 }
 
 .end_presentation{
-    color: #96307d;
+    color: white;
+    background-color: #96307d;
     margin-block-end: 0em;
     margin-block-start: 0em;
 }
 
 .form_infos {
-    margin: 0% 0% 0% 0%!important;
+    /*margin: 0% 0% 0% 0%!important;*/
 }
 
 .bottom-page{
@@ -106,11 +116,19 @@
         text-align: center;
         color: white;
         font-size: 21px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .bottom_text{
+        width: 100%;
     }
 
     .congrats {
         font-size: 45px;
         margin-block-start: 0;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     .wrap_grille {
