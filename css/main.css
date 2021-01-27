@@ -228,15 +228,27 @@ p {
     font-size: 21px;
 }
 /*MediaQueries*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1400px) {
     .infos_container {
-        width: 42%;
-        left: 29%;
+        width: 30%;
+        left: 35%;
+    }
+    
+    .message {
+        width: 30%;
+        left: 35%;
     }
 
-    .message{
-        width: 42%;
-        left: 29%;
+    .form_container {
+        padding-top: 11rem!important;
+    }
+    .number_code {
+        font-size: 4em;
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .form-control {
+        font-size: 0.8rem!important;
     }
 }
 @media screen and (max-width: 700px) {
@@ -268,7 +280,7 @@ p {
         width: 46%;
     }
     .error_image{
-        padding-top: 16%;
+        padding-top: 12%;
     }
     
 }
