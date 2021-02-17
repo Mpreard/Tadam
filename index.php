@@ -8,11 +8,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   <title>Concours Tadam - Elancia</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>
-
 </head>
 
 <body>
@@ -28,8 +28,8 @@
         <p class = "GL" id="GL"> Bonne chance ! </p>
       </div>
     </div>
-    <div class="form_container" id="form_container">
-      <form action="./php/run.php" id="formulaire" class="form_group_button" method="POST">
+    <form action="./php/run.php" id="formulaire" class="form_group_button" method="POST">
+      <div class="form_container" id="form_container">
         <div class="container code_square form_group_button">
           <div class="row">
             <div class="col-12 jpa">
@@ -42,10 +42,9 @@
             </div>
           </div>
         </div>
-
-    </div>
-    <div class="bottom_page" id="bottom_page" >
-      <div class="container container_infos">
+      </div>
+      <div class="bottom_page" id="bottom_page" >
+        <div class="container container_infos">
           <div class="row">
             <div class = "infos_container">
               <div class="col-6 input_infos">
@@ -62,8 +61,8 @@
             </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 
 <script>

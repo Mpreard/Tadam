@@ -52,7 +52,7 @@
                         </div>';
                 } 
                 session_destroy();
-                header("refresh:20;url=../index.php");
+                //header("refresh:20;url=../index.php");
             ?>
         </div>
         <div class="bottom_page" id="bottom_page" >

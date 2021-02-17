@@ -228,15 +228,27 @@ p {
     font-size: 21px;
 }
 /*MediaQueries*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1400px) {
     .infos_container {
-        width: 42%;
-        left: 29%;
+        width: 30%;
+        left: 35%;
+    }
+    
+    .message {
+        width: 30%;
+        left: 35%;
     }
 
-    .message{
-        width: 42%;
-        left: 29%;
+    .form_container {
+        padding-top: 11rem!important;
+    }
+    .number_code {
+        font-size: 4em;
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .form-control {
+        font-size: 0.8rem!important;
     }
 }
 @media screen and (max-width: 700px) {
@@ -264,14 +276,37 @@ p {
     .error_message{
         font-size: 1.8rem;
     }
+
     .img_crane {
-        width: 46%;
+        width: 37%;
     }
-    .error_image{
-        padding-top: 16%;
+
+    .error_image {
+        padding-top: 5%;
     }
     
 }
+
+@media screen and (max-width: 482px) and (min-height: 800px){
+    .error_message_div{
+        background-color: transparent;
+        padding-top: 50%!important;
+        font-size: 1rem!important;
+    }
+
+    .error_message {
+        font-size: 1rem!important;
+    }
+    
+    .infos_container {
+        position: static;
+    }
+
+    .bottom_page{
+        position: absolute;
+    }
+}
+
 @media screen and (max-width: 482px) {
     .error_message_div{
         background-color: transparent;
@@ -279,8 +314,8 @@ p {
         font-size: 1rem;
     }
 
-    .error_message{
-        font-size: 1.2rem;
+    .error_message {
+        font-size: 0.8rem;
     }
     
     .infos_container {
