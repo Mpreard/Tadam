@@ -1,14 +1,6 @@
 <?php 
 session_start();
-
-try{
-  $bdd = new PDO('mysql:host=mysql-tima1617.alwaysdata.net;dbname=tima1617_bdd_tadam_elancia_concours;charset=utf8','tima1617','Maeltima16');
-  //$bdd = new PDO('mysql:host=localhost;dbname=spideer_tadam_jeu_db;charset=utf8','gCd95PAv0zsAUJe1');
-}
-  catch (Exception $e)
-{
-  die('Erreur : ' . $e->getMessage());
-}
+require('db_connect.php');
 
 $search  = array('À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'à', 'á', 'â', 'ã', 'ä', 
                 'å', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ò', 'ó', 'ô', 'õ', 'ö', 'ù', 'ú', 'û', 'ü', 'ý', 'ÿ');

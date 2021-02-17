@@ -22,7 +22,6 @@
                 <img class="logo quiestce" src="../assets/logos/logo_quiestce.png"> 
             </div>
             <?php 
-                //TO DO : changer les images
                 if($_SESSION['result'] === 'victoire')
                 {
                     echo '<div class ="error_page">
