@@ -9,7 +9,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <title>Concours Tadam - Elancia</title>
+  <link rel="icon" type="image/png" href="./assets/logo/tadam_icon.png" />
+  <title>Concours Tadam</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?"></script>

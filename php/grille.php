@@ -14,8 +14,9 @@ if(!isset($_SESSION['email']) || !isset($_SESSION['prenom']))
 <html lang="en">  
   <head>
     <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galerie d'images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/logo/tadam_icon.png" />
+    <title>Concours Tadam</title>
     <link rel="stylesheet" type="text/css" href="../css/page2.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
